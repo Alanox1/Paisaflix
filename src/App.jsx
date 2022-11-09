@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 import Layout from './components/Layout/Layout'
-import {Routes,Route,BrowserRouter,Link} from "react-router-dom"
+import {Routes,Route,BrowserRouter} from "react-router-dom"
 import Home from './components/Home/Home'
 import MovieDetails from "../src/components/MovieDetails/MovieDetails"
 import Navbar from './components/Navbar/Navbar'
@@ -23,7 +23,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/movies/:_id' element={<MovieDetails />}/>
+         <Route path='/movies/:_id' element={<MovieDetails />}/> 
+      
       </Routes>
       <Footer />
     </Layout> )

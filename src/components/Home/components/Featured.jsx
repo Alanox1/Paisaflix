@@ -20,7 +20,7 @@ function Featured() {
    <Stack direction="row" flexWrap="wrap" spacing="10px">
      {info 
      ? info.map((el) => (
-      <Link key={el._id}    onClick={() => getMoviePage(el._id)} to={`movies/${el._id}`}>
+       <Link key={el._id}    onClick={() => getMoviePage(el._id)} to={`/movies/${el._id}`}>
         <Stack position="relative"    >
           <Stack opacity="0.7">
           <Image  cursor="pointer" 

@@ -8,7 +8,7 @@ function MovieDetails() {
   const [data,setData] = useState(null)
   const params = useParams()
   useEffect(() => {
-getMoviePage(params._id,setData)
+    getMoviePage(params._id,setData)
   },[])
   return (
     <Stack>
