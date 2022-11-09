@@ -9,8 +9,8 @@ function MovieDetails() {
   const params = useParams()
  
   useEffect(() => {
-    // getMoviePage(params._id,setData)
-    getMoviePage(params._id)
+    getMoviePage(params._id,setData)
+  
   },[])
 
   return (
