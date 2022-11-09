@@ -16,10 +16,10 @@ const getFeatured = async (state) => {
      {data} = await res.json();
       state(data)
 }
- const getMoviePage = async (id,state) => {
+ const getMoviePage = async (id) => {
     const res = await fetch(`https://paisa-challange.herokuapp.com/api/v1/paisaflix/movies/${id}`),
       {data} = await res.json();
-      state(data)
+      // state(data)
   }
 
 export  {

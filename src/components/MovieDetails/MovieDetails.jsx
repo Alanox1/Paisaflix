@@ -7,9 +7,12 @@ import {AiOutlineArrowLeft} from "react-icons/ai"
 function MovieDetails() {
   const [data,setData] = useState(null)
   const params = useParams()
+ 
   useEffect(() => {
-    getMoviePage(params._id,setData)
+    // getMoviePage(params._id,setData)
+    getMoviePage(params._id)
   },[])
+
   return (
     <Stack>
        {data ?<Stack direction="row">

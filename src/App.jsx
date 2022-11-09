@@ -23,8 +23,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />}/>
-         <Route path='/movies/:_id' element={<MovieDetails />}/> 
-      
+        <Route path='/movies/:_id' element={<MovieDetails />}/> 
       </Routes>
       <Footer />
     </Layout> )
