@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import {Stack,Text,Image,Icon} from "@chakra-ui/react"
-import { getFeatured} from '../../../Funciones/funciones'
+import { getFeatured,getMoviePage} from '../../../Funciones/funciones'
 import { Link } from "react-router-dom";
 import {AiOutlineClockCircle, AiOutlineEye} from "react-icons/ai"
 function Featured() {
@@ -20,7 +20,7 @@ function Featured() {
    <Stack direction="row" flexWrap="wrap" spacing="10px">
      {info 
      ? info.map((el) => (
-       <Link key={el._id}  to={`/movies/${el._id}`}   onClick={() => getMoviePage(el._id)} >
+       <Link key={el._id}  to={`/movies/${el._id}`} onClick={() => getMoviePage(el._id)}>
         <Stack position="relative"    >
           <Stack opacity="0.7">
           <Image  cursor="pointer" 
